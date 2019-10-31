@@ -1,30 +1,13 @@
 # utils
 
-#### 介绍
+## 功能函数
 
-project utils
+### mutilSort
 
-#### 软件架构
+- 对数组按`{key,sort}`进行多级排序
+- （待做）需要按需求将空值放到最下面
 
-软件架构说明
+### receive
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-#### 码云特技
+- 用于处理 redux 接收到的数据，主要是 fetch 成功后的处理
+- 每次传入`nextProps[key]`都会创建一个新对象，有性能问题
